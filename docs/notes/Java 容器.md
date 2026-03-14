@@ -25,7 +25,7 @@
 
 ## Collection
 
-<div align="center"> <img src="/pics/java-collections.png"/> </div><br>
+<div align="center"> <img src="../pics/java-collections.png"/> </div><br>
 
 ### 1. Set
 
@@ -51,7 +51,7 @@
 
 ## Map
 
-<div align="center"> <img src="/pics/java-collections1.png"/> </div><br>
+<div align="center"> <img src="../pics/java-collections1.png"/> </div><br>
 
 - HashMap：基于哈希实现；
 
@@ -65,7 +65,7 @@
 
 ## 迭代器模式
 
-<div align="center"> <img src="/pics/Iterator-1.jpg"/> </div><br>
+<div align="center"> <img src="../pics/Iterator-1.jpg"/> </div><br>
 
 Collection 实现了 Iterable 接口，其中的 iterator() 方法能够产生一个 Iterator 对象，通过这个对象就可以迭代遍历 Collection 中的元素。
 
@@ -287,7 +287,7 @@ transient Entry[] table;
 
 其中，Entry 就是存储数据的键值对，它包含了四个字段。从 next 字段我们可以看出 Entry 是一个链表，即每个桶会存放一个链表。
 
-<div align="center"> <img src="/pics/8fe838e3-ef77-4f63-bf45-417b6bc5c6bb.png" width="600"/> </div><br>
+<div align="center"> <img src="../pics/8fe838e3-ef77-4f63-bf45-417b6bc5c6bb.png" width="600"/> </div><br>
 
 JDK 1.8 使用 Node 类型存储一个键值对，它依然继承自 Entry，因此可以按照上面的存储结构来理解。
 
@@ -347,7 +347,7 @@ map.put("K3", "V3");
 - 插入 &lt;K2,V2> 键值对，先计算 K2 的 hashCode 为 118，使用除留余数法得到所在的桶下标 118%16=6。
 - 插入 &lt;K3,V3> 键值对，先计算 K3 的 hashCode 为 118，使用除留余数法得到所在的桶下标 118%16=6，插在 &lt;K2,V2> 后面。
 
-<div align="center"> <img src="/pics/07903a31-0fb3-45fc-86f5-26f0b28fa4e7.png" width="600"/> </div><br>
+<div align="center"> <img src="../pics/07903a31-0fb3-45fc-86f5-26f0b28fa4e7.png" width="600"/> </div><br>
 
 查找需要分成两步进行：
 
@@ -610,7 +610,7 @@ final Segment<K,V>[] segments;
 static final int DEFAULT_CONCURRENCY_LEVEL = 16;
 ```
 
-<div align="center"> <img src="/pics/image005.jpg"/> </div><br>
+<div align="center"> <img src="../pics/image005.jpg"/> </div><br>
 
 ### 2. HashEntery 的不可变性
 
@@ -657,9 +657,9 @@ final V remove(Object key, int hash, Object value) {
 
 在以下链表中删除 C 节点，C 节点之后的所有节点都原样保留，C 节点之前的所有节点都被克隆到新的链表中，并且顺序被反转。可以注意到，在执行 remove 操作时，原始链表并没有被修改，也就是说，读线程不会受到执行 remove 操作的并发写线程的干扰。
 
-<div align="center"> <img src="/pics/image007.jpg"/> </div><br>
+<div align="center"> <img src="../pics/image007.jpg"/> </div><br>
 
-<div align="center"> <img src="/pics/image008.jpg"/> </div><br>
+<div align="center"> <img src="../pics/image008.jpg"/> </div><br>
 
 除了 remove 操作，其它操作也类似。可以得出一个结论：写线程对某个链表的结构性修改不会影响其他的并发读线程对这个链表的遍历访问。
 
@@ -678,7 +678,7 @@ static final class HashEntry<K,V> {
 
 下面以写线程 M 和读线程 N 来说明 ConcurrentHashMap 如何协调读 / 写线程间的内存可见性问题。
 
-<div align="center"> <img src="/pics/image009.jpg"/> </div><br>
+<div align="center"> <img src="../pics/image009.jpg"/> </div><br>
 
 假设线程 M 在写入了 volatile 型变量 count 后，线程 N 读取了这个 volatile 型变量 count。
 
