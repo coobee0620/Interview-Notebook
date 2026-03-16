@@ -49,7 +49,7 @@ final A y = new A();
 y.a = 1;
 ```
 
-**2. 方法**  </font> </br>
+**2. 方法**
 
 声明方法不能被子类覆盖。
 
@@ -554,7 +554,7 @@ public class Box<T> {
 }
 ```
 
-> [Java 泛型详解](https://www.ziwenxie.site/2017/03/01/java-generic/)</br>[10 道 Java 泛型面试题](https://cloud.tencent.com/developer/article/1033693)
+> [Java 泛型详解](https://www.ziwenxie.site/2017/03/01/java-generic/)[10 道 Java 泛型面试题](https://cloud.tencent.com/developer/article/1033693)
 
 # 十、注解
 
@@ -593,7 +593,7 @@ Java 注解是附加在代码中的一些元信息，用于一些工具在编译
 7. Binary Literals, Underscore in literals
 8. Diamond Syntax
 
-> [Difference between Java 1.8 and Java 1.7?](http://www.selfgrowth.com/articles/difference-between-java-18-and-java-17)</br> [Java 8 特性 ](http://www.importnew.com/19345.html)
+> [Difference between Java 1.8 and Java 1.7?](http://www.selfgrowth.com/articles/difference-between-java-18-and-java-17) [Java 8 特性 ](http://www.importnew.com/19345.html)
 
 ## Java 与 C++ 的区别
 

@@ -1,28 +1,28 @@
-# 技术面试笔记
+# 📘 技术面试笔记
 
 > 互联网公司技术面试必备知识整理
 
-[:cloud: 网络](/notes/计算机网络.md) &nbsp;|&nbsp; 
-[:computer: 操作系统](/notes/计算机操作系统.md) &nbsp;|&nbsp; 
-[:pencil2: 算法](/notes/算法.md) &nbsp;|&nbsp; 
-[:couple: 面向对象](/notes/面向对象思想.md) &nbsp;|&nbsp; 
-[:floppy_disk: 数据库](/notes/数据库系统原理.md) &nbsp;|&nbsp; 
-[:coffee: Java](/notes/Java%20基础.md) &nbsp;|&nbsp; 
-[:sweat_drops: 分布式](/notes/分布式基础.md) &nbsp;|&nbsp; 
-[:hammer: 工具](/notes/Git.md)
+[🌐 网络](/notes/计算机网络.md) &nbsp;|&nbsp;
+[💻 操作系统](/notes/计算机操作系统.md) &nbsp;|&nbsp;
+[📐 算法](/notes/算法.md) &nbsp;|&nbsp;
+[🧩 面向对象](/notes/面向对象思想.md) &nbsp;|&nbsp;
+[🗄️ 数据库](/notes/数据库系统原理.md) &nbsp;|&nbsp;
+[☕ Java](/notes/Java%20基础.md) &nbsp;|&nbsp;
+[🔀 分布式](/notes/分布式基础.md) &nbsp;|&nbsp;
+[🔧 工具](/notes/Git.md)
 
 ---
 
 本仓库整理了技术面试相关的知识点，包括：
 
-- **Java**: 基础、容器、并发、虚拟机、IO、设计模式
-- **算法与数据结构**: 算法、剑指Offer、Leetcode题解
-- **计算机网络**: 计算机网络、HTTP
-- **操作系统**: 操作系统、Linux
-- **数据库**: 原理、MySQL、Redis、SQL
-- **分布式**: 基础、问题分析、一致性协议
-- **面向对象**: 思想、设计模式
-- **编码实践**: 代码风格、可读性、重构
+- **☕ Java**: 基础、容器、并发、虚拟机、IO、设计模式
+- **📐 算法与数据结构**: 算法、剑指 Offer、Leetcode 题解
+- **🌐 计算机网络**: 计算机网络、HTTP
+- **💻 操作系统**: 操作系统、Linux
+- **🗄️ 数据库**: 原理、MySQL、Redis、SQL
+- **🔀 分布式**: 基础、问题分析、一致性协议
+- **🧩 面向对象**: 思想、设计模式
+- **✍️ 编码实践**: 代码风格、可读性、重构
 
 > 本仓库不参与商业行为，不向读者收取任何费用。
 
