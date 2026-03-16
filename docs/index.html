@@ -8,45 +8,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
 
-  <!-- docsify-themeable 主题 -->
+  <!-- docsify-themeable 基础高级白主题 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple.css">
 
-  <!-- 自定义样式 -->
+  <!-- 高级质感自定义样式 -->
   <link rel="stylesheet" href="./custom.css">
 </head>
 <body>
-  <div id="app">加载中...</div>
+  <div id="app">正在加载文档内容...</div>
   <script>
     window.$docsify = {
       basePath: './',
       relativePath: true,
-      name: '📘 技术面试笔记',
+      name: '技术面试笔记',
       nameLink: '/',
       repo: 'https://github.com/coobee0620/Interview-Notebook',
       loadSidebar: true,
       subMaxLevel: 3,
       auto2top: true,
 
-      // 搜索
+      // 搜索配置
       search: {
         maxAge: 86400000,
         paths: 'auto',
-        placeholder: '🔍 搜索笔记...',
-        noData: '😕 没有找到结果',
+        placeholder: '搜索',
+        noData: '未找到相关内容',
         depth: 3
       },
 
       // 代码复制
       copyCode: {
-        buttonText: '📋 复制',
-        errorText: '❌ 失败',
-        successText: '✅ 已复制'
+        buttonText: '复制代码',
+        errorText: '复制出错',
+        successText: '已复制'
       },
 
       // 分页导航
       pagination: {
-        previousText: '← 上一章',
-        nextText: '下一章 →',
+        previousText: '上一节',
+        nextText: '下一节',
         crossChapter: true
       },
 
@@ -56,24 +56,21 @@
         position: 'top',
         margin: '10px',
         float: 'right',
-        fontsize: '0.9em',
-        color: 'var(--theme-color)',
+        fontsize: '0.85em',
+        color: '#999',
         language: 'chinese'
       },
 
-      // 主题色
-      themeColor: '#5b73e8',
-
-      // 图片懒加载 & markdown 渲染器
+      // 图片渲染
       markdown: {
         renderer: {
           image: function(href, title) {
-            return '<img src="' + href + '" alt="' + (title || '') + '" loading="lazy" style="max-width:100%;">'
+            return '<img src="' + href + '" alt="' + (title || '') + '" loading="lazy">'
           }
         }
       },
 
-      // themeable 配置
+      // themeable 配色体系
       themeable: {
         readyTransition: true,
         responsiveTables: true
